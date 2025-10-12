@@ -72,7 +72,13 @@
       box-shadow: 0 8px 18px rgba(12,17,23,0.5);
       flex-shrink:0;
     }
-
+.avatar img {
+  width: 40px;            /* adjust as needed */
+  height: 40px;
+  border-radius: 50%;     /* makes it circular */
+  object-fit: cover;      /* ensures image fits well */
+  display: block;
+}
     .header h1{
       margin:0;
       font-size:20px;
@@ -151,9 +157,12 @@
 <body>
   <main class="card" role="main" aria-labelledby="profile-title">
     <div class="left">
-      <div class="avatar" aria-hidden="true">
-        YN
-      </div>
+<div class="avatar" aria-hidden="true">
+  <img 
+    src="https://yt3.googleusercontent.com/i66CyAld7WcafX-8OU--SSpinWmrzRIIlZTAyASMKGAw-11j1MecT6TnC44HYO2JX7XgJCfV0A=s160-c-k-c0x00ffffff-no-rj" 
+    alt="YouTube Avatar" 
+  />
+</div>
     </div>
 
     <div class="right">
